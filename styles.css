@@ -19,7 +19,7 @@ body {
 
 .left-container {
     position: absolute;
-    top: 250px;
+    top: 350px;
     left: 20px;
     width: 40%;
 }
@@ -54,7 +54,7 @@ body {
 
 .right-container {
     position: absolute;
-    top: 250px;
+    top: 350px;
     right: 20px;
     width: 50%;
     background: #444;
