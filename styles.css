@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: white;
+    overflow-x: hidden;
+}
+
+.logo img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.left-container {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 40%;
+}
+.contact-us {
+    padding: 0px;
+    height: 15%;
+    width: 93.5%;
+    background-color: bisque;
+    padding-bottom: min();
+    text-align: center;
+    text-decoration-color: #1e1e1e;
+    position: relative;
+}
+.container {
+    background: #333;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: white;
+    overflow: hidden; /* Ensures content stays within the container */
+}
+
+.container:hover {
+    background: cyan;
+}
+
+.container:active {
+    transform: scale(1.05);
+}
+
+.right-container {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    width: 50%;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonials p {
+    margin: 10px 0;
+    line-height: 1.6;
+    background: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.expanded {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Limits the expansion height */
+    background: #222;
+    transition: max-height 0.5s ease-in-out; /* Smooth expansion */
+}
+
+.expanded .content {
+    display: block;
+    padding: 20px;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+}
+
+@keyframes bg-animation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    background: linear-gradient(45deg, #1e1e1e, #222, #333);
+    background-size: 400% 400%;
+    animation: bg-animation 15s ease infinite;
+}
