@@ -53,16 +53,18 @@ body {
 }
 
 .right-container {
-    position: absolute;
-    top: 350px;
-    right: 20px;
-    width: 50%;
-    background: #444;
-    padding: 20px;
-    border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  width: 50%;
+  background: #444;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto; 
+  height: calc(100vh - 220px); 
 }
 
-.testimonials p {
+.testimonials {
     margin: 10px 0;
     line-height: 1.6;
     background: #555;
